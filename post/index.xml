@@ -6,12 +6,13 @@
         <description>Recent content in Posts on fangyilin</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>fangyilin</copyright><atom:link href="https://fangyilin66.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title></title>
-        <link>https://fangyilin66.github.io/p/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <copyright>fangyilin</copyright>
+        <lastBuildDate>Sun, 05 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://fangyilin66.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>完成博客的第一篇</title>
+        <link>https://fangyilin66.github.io/p/%E5%AE%8C%E6%88%90%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87/</link>
+        <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://fangyilin66.github.io/p/</guid>
+        <guid>https://fangyilin66.github.io/p/%E5%AE%8C%E6%88%90%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87/</guid>
         <description>&lt;h1 id=&#34;完成博客的第一篇&#34;&gt;完成博客的第一篇
 &lt;/h1&gt;&lt;p&gt;今天终于跟随莱特雷-letere的视频&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1bovfeaEtQ?p=2&amp;amp;vd_source=07634a80e4eb96733272a7e77fd02d0b&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo + Github免费搭建博客，并实现自动化部署&lt;/a&gt;完成了我的博客的搭建。&lt;br&gt;
