@@ -100,7 +100,7 @@
       "selector": "a[href*='github.com']",
       "text": ["欢迎光临主人的 GitHub！", "这是主人的代码小窝~", "Star 一下，鼓励鼓励我吧！"]
   }, {
-    "selector": ".back-to-top",
+    "selector": "#backTopBtn",
     "text": ["点它就可以回到顶部啦！", "又回到最初的起点～", "要回到开始的地方么？"]
   }, {
     "selector": ".reward-container",
