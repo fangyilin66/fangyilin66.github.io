@@ -1204,36 +1204,72 @@
 </style>
 
 <script>
-    
 
-    function initScrollTop() {
-        let rightSideBar = document.querySelector(".right-sidebar");
-        if (!rightSideBar) {
-            return;
+
+function initScrollTop() {
+    
+    
+    const oldBtn = document.getElementById('backTopBtn');
+    if (oldBtn) {
+        oldBtn.remove();
+    }
+
+    
+    const rightSideBar = document.querySelector(".right-sidebar");
+    if (!rightSideBar) {
+        
+        return;
+    }
+
+    
+    const btn = document.createElement("div");
+    btn.id = "backTopBtn";
+    btn.title = "返回顶部"; 
+
+    
+    btn.onclick = function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    
+    rightSideBar.appendChild(btn);
+
+    
+    function toggleButtonVisibility() {
+        
+        if (window.scrollY > 300) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
         }
-        
-        let btn = document.createElement("div");
-        btn.id = "backTopBtn";
-        btn.onclick = backToTop
-        rightSideBar.appendChild(btn)
-        
-        window.onscroll = function() {
-            
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                btn.style.display = "block";
-            } else {
-                btn.style.display = "none";
-            }
-        };
     }
 
     
+    toggleButtonVisibility();
 
-    function backToTop(){
-        window.scrollTo({ top: 0, behavior: "smooth" })
-    }
+    
+    
+    window.addEventListener('scroll', toggleButtonVisibility);
+}
 
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
     initScrollTop();
+});
+
+
+
+
+document.addEventListener('pjax:complete', () => {
+    
+    if (window.Stack) window.Stack.init();
+
+    
+    initScrollTop();
+});
 </script>
 
 <style>
