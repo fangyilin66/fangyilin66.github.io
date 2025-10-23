@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\nflag{This_our_netdisk!}\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Writeup 一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\n">
 <title>我的第一次CTF新手赛</title>
 
 <link rel='canonical' href='https://fangyilin66.github.io/p/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1ctf%E6%96%B0%E6%89%8B%E8%B5%9B/'>
 
 <link rel="stylesheet" href="/scss/style.min.847a3791adb9757f6ddf918c3ffed8aa01452a856ed5b670f9e8aae9567d425e.css"><meta property='og:title' content="我的第一次CTF新手赛">
-<meta property='og:description' content="一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\nflag{This_our_netdisk!}\n">
+<meta property='og:description' content="Writeup 一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\n">
 <meta property='og:url' content='https://fangyilin66.github.io/p/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1ctf%E6%96%B0%E6%89%8B%E8%B5%9B/'>
 <meta property='og:site_name' content='fangyilin'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-10-23T19:44:07&#43;08:00'/><meta property='article:modified_time' content='2025-10-23T19:44:07&#43;08:00'/>
 <meta name="twitter:title" content="我的第一次CTF新手赛">
-<meta name="twitter:description" content="一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\nflag{This_our_netdisk!}\n">
+<meta name="twitter:description" content="Writeup 一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\n">
     <link rel="shortcut icon" href="/GgSzznWbTdZXy0e.ico" />
 <div class="loading">
     <div class="sharingon">
@@ -548,7 +548,8 @@
     <section class="article-content">
     
     
-    <h2 id="一内网网盘">一、内网网盘
+    <h1 id="writeup">Writeup
+</h1><h2 id="一内网网盘">一、内网网盘
 </h2><p>进入<a class="link" href="https://ctf.nefu.edu.cn/netdisk"  target="_blank" rel="noopener"
     >https://ctf.nefu.edu.cn/netdisk</a>,flag在文件<strong>here_is_what_you_want.txt</strong>中。</p>
 <blockquote>
@@ -620,7 +621,7 @@
 <p>nsilab{中华人民万岁}</p>
 </blockquote>
 <h2 id="十四罗马的一个皇帝">十四、罗马的一个皇帝
-</h2><p>根据题目想到是凯撒密码，一个一个试，发现偏移16位，找到flag</p>
+</h2><p>根据题目想到是凯撒密码，一个一个试，发现偏移16为，找到flag</p>
 <blockquote>
 <p>nsilab{hello caesar}</p>
 </blockquote>
@@ -757,59 +758,58 @@ print(f&quot;flag = {flag.decode('utf-8')}&quot;)`
 <h2 id="三十四0-ez_oi迫真">三十四、0-ez_oi(迫真)
 </h2><p>通过pwntools运行代码，得到flag</p>
 <blockquote>
-<p>flag{00d79482-2c41-4ba1-9ab4-aac99137b8e4}<br>
-代码为
-`#!/usr/bin/env python3
-from pwn import *
-import math</p>
+<p>flag{00d79482-2c41-4ba1-9ab4-aac99137b8e4}</p>
 </blockquote>
-<ul>
-<li>
-<p>def prime_factorization(x):
-factors = []
-while x % 2 == 0:
-factors.append(2)
-x = x // 2
-i = 3
-while i * i &lt;= x:
-while x % i == 0:
-factors.append(i)
-x = x // i
-i += 2
-if x &gt; 1:
-factors.append(x)
-return factors</p>
-<p>io = remote(&lsquo;contest.ctf.nefu.edu.cn&rsquo;, 33772)</p>
-</li>
-</ul>
-<p>n</p>
-<pre><code>n = int(io.recvline().decode().strip())
-</code></pre>
-<p>字
-numbers_line = io.recvline().decode().strip()
-numbers = list(map(int, numbers_line.split()))</p>
-<pre><code>for num in numbers:
-    factors = prime_factorization(num)
+<p>代码为</p>
+<pre><code>#!/usr/bin/env python3
 
-    result = '*'.join(map(str, factors))
-    print(f&quot;Sending: {result}&quot;) 
-    
+    from pwn import *
+    import math
+    def prime_factorization(x):
+        factors = []
+        while x % 2 == 0:
+            factors.append(2)
+            x = x // 2
+        i = 3
+        while i * i &lt;= x:
+            while x % i == 0:
+                factors.append(i)
+                x = x // i
+            i += 2
+        if x &gt; 1:
+            factors.append(x)
+        return factors
 
-    io.sendline(result.encode()) 
+    io = remote('contest.ctf.nefu.edu.cn', 33772)
 
-print(&quot;\n--- Receiving final output from server ---&quot;)
-while True:
-    try:
 
-        response = io.recvline(timeout=1).decode().strip()
-        if response:
-            print(response)
-        else:
-            break 
-    except EOFError:
-        break
+    n = int(io.recvline().decode().strip())
 
-io.close()`
+    numbers_line = io.recvline().decode().strip()
+    numbers = list(map(int, numbers_line.split()))
+
+    for num in numbers:
+        factors = prime_factorization(num)
+
+        result = '*'.join(map(str, factors))
+        print(f&quot;Sending: {result}&quot;) 
+        
+
+        io.sendline(result.encode()) 
+
+    print(&quot;\n--- Receiving final output from server ---&quot;)
+    while True:
+        try:
+
+            response = io.recvline(timeout=1).decode().strip()
+            if response:
+                print(response)
+            else:
+                break 
+        except EOFError:
+            break
+
+    io.close()
 </code></pre>
 <h2 id="三十五1-what_is_32">三十五、1-what_is_32
 </h2><p>与33题相同，但原以为32位系统a应该输入20+4，结果发现a应该输入20+8，后面同三十题，得到flag</p>
@@ -836,7 +836,8 @@ io.close()`
 <blockquote>
 <p>nsilab{3604436468783450892188797727424315019700464485426289400510317953710604890993}</p>
 </blockquote>
-<p>代码为`
+<p>代码为
+`
 p = 250267979330594551356981870969598325261
 q = 333057179167141094941957875863444588587
 e = 65537</p>

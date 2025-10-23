@@ -13,7 +13,8 @@
         <pubDate>Thu, 23 Oct 2025 19:44:07 +0800</pubDate>
         
         <guid>https://fangyilin66.github.io/p/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1ctf%E6%96%B0%E6%89%8B%E8%B5%9B/</guid>
-        <description>&lt;h2 id=&#34;一内网网盘&#34;&gt;一、内网网盘
+        <description>&lt;h1 id=&#34;writeup&#34;&gt;Writeup
+&lt;/h1&gt;&lt;h2 id=&#34;一内网网盘&#34;&gt;一、内网网盘
 &lt;/h2&gt;&lt;p&gt;进入&lt;a class=&#34;link&#34; href=&#34;https://ctf.nefu.edu.cn/netdisk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://ctf.nefu.edu.cn/netdisk&lt;/a&gt;,flag在文件&lt;strong&gt;here_is_what_you_want.txt&lt;/strong&gt;中。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -85,7 +86,7 @@
 &lt;p&gt;nsilab{中华人民万岁}&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;十四罗马的一个皇帝&#34;&gt;十四、罗马的一个皇帝
-&lt;/h2&gt;&lt;p&gt;根据题目想到是凯撒密码，一个一个试，发现偏移16位，找到flag&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;根据题目想到是凯撒密码，一个一个试，发现偏移16为，找到flag&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;nsilab{hello caesar}&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -222,59 +223,58 @@ print(f&amp;quot;flag = {flag.decode(&#39;utf-8&#39;)}&amp;quot;)`
 &lt;h2 id=&#34;三十四0-ez_oi迫真&#34;&gt;三十四、0-ez_oi(迫真)
 &lt;/h2&gt;&lt;p&gt;通过pwntools运行代码，得到flag&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;flag{00d79482-2c41-4ba1-9ab4-aac99137b8e4}&lt;br&gt;
-代码为
-`#!/usr/bin/env python3
-from pwn import *
-import math&lt;/p&gt;
+&lt;p&gt;flag{00d79482-2c41-4ba1-9ab4-aac99137b8e4}&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;def prime_factorization(x):
-factors = []
-while x % 2 == 0:
-factors.append(2)
-x = x // 2
-i = 3
-while i * i &amp;lt;= x:
-while x % i == 0:
-factors.append(i)
-x = x // i
-i += 2
-if x &amp;gt; 1:
-factors.append(x)
-return factors&lt;/p&gt;
-&lt;p&gt;io = remote(&amp;lsquo;contest.ctf.nefu.edu.cn&amp;rsquo;, 33772)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;n&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;n = int(io.recvline().decode().strip())
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;字
-numbers_line = io.recvline().decode().strip()
-numbers = list(map(int, numbers_line.split()))&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;for num in numbers:
-    factors = prime_factorization(num)
+&lt;p&gt;代码为&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env python3
 
-    result = &#39;*&#39;.join(map(str, factors))
-    print(f&amp;quot;Sending: {result}&amp;quot;) 
-    
+    from pwn import *
+    import math
+    def prime_factorization(x):
+        factors = []
+        while x % 2 == 0:
+            factors.append(2)
+            x = x // 2
+        i = 3
+        while i * i &amp;lt;= x:
+            while x % i == 0:
+                factors.append(i)
+                x = x // i
+            i += 2
+        if x &amp;gt; 1:
+            factors.append(x)
+        return factors
 
-    io.sendline(result.encode()) 
+    io = remote(&#39;contest.ctf.nefu.edu.cn&#39;, 33772)
 
-print(&amp;quot;\n--- Receiving final output from server ---&amp;quot;)
-while True:
-    try:
 
-        response = io.recvline(timeout=1).decode().strip()
-        if response:
-            print(response)
-        else:
-            break 
-    except EOFError:
-        break
+    n = int(io.recvline().decode().strip())
 
-io.close()`
+    numbers_line = io.recvline().decode().strip()
+    numbers = list(map(int, numbers_line.split()))
+
+    for num in numbers:
+        factors = prime_factorization(num)
+
+        result = &#39;*&#39;.join(map(str, factors))
+        print(f&amp;quot;Sending: {result}&amp;quot;) 
+        
+
+        io.sendline(result.encode()) 
+
+    print(&amp;quot;\n--- Receiving final output from server ---&amp;quot;)
+    while True:
+        try:
+
+            response = io.recvline(timeout=1).decode().strip()
+            if response:
+                print(response)
+            else:
+                break 
+        except EOFError:
+            break
+
+    io.close()
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;三十五1-what_is_32&#34;&gt;三十五、1-what_is_32
 &lt;/h2&gt;&lt;p&gt;与33题相同，但原以为32位系统a应该输入20+4，结果发现a应该输入20+8，后面同三十题，得到flag&lt;/p&gt;
@@ -301,7 +301,8 @@ io.close()`
 &lt;blockquote&gt;
 &lt;p&gt;nsilab{3604436468783450892188797727424315019700464485426289400510317953710604890993}&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;代码为`
+&lt;p&gt;代码为
+`
 p = 250267979330594551356981870969598325261
 q = 333057179167141094941957875863444588587
 e = 65537&lt;/p&gt;
