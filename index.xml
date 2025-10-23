@@ -7,7 +7,344 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>fangyilin</copyright>
-        <lastBuildDate>Sun, 05 Oct 2025 15:05:05 +0800</lastBuildDate><atom:link href="https://fangyilin66.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 23 Oct 2025 19:44:07 +0800</lastBuildDate><atom:link href="https://fangyilin66.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>我的第一次CTF新手赛</title>
+        <link>https://fangyilin66.github.io/p/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1ctf%E6%96%B0%E6%89%8B%E8%B5%9B/</link>
+        <pubDate>Thu, 23 Oct 2025 19:44:07 +0800</pubDate>
+        
+        <guid>https://fangyilin66.github.io/p/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1ctf%E6%96%B0%E6%89%8B%E8%B5%9B/</guid>
+        <description>&lt;h2 id=&#34;一内网网盘&#34;&gt;一、内网网盘
+&lt;/h2&gt;&lt;p&gt;进入&lt;a class=&#34;link&#34; href=&#34;https://ctf.nefu.edu.cn/netdisk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ctf.nefu.edu.cn/netdisk&lt;/a&gt;,flag在文件&lt;strong&gt;here_is_what_you_want.txt&lt;/strong&gt;中。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{This_our_netdisk!}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二签个到叭&#34;&gt;二、签个到叭
+&lt;/h2&gt;&lt;p&gt;flag就在题目中&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{we1c0me_To_NSILAB!}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三从这里开始&#34;&gt;三、!从这里开始!
+&lt;/h2&gt;&lt;p&gt;进入&lt;a class=&#34;link&#34; href=&#34;https://harry0597.com/2022/08/24/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://harry0597.com/2022/08/24/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/&lt;/a&gt;,flag在最下面&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{The_world_of_cryptography}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;四what_is_nc--请先看我-&#34;&gt;四、what_is_nc ( 请先看我 )
+&lt;/h2&gt;&lt;p&gt;打开容器，在linux系统中打开终端使用nc连接容器的ip和端口，即可获得flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{d6d1a9e7-fce3-456c-896b-b66d851b7930}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;五什么是ssh&#34;&gt;五、什么是ssh？
+&lt;/h2&gt;&lt;p&gt;在Linux终端中用ssh连接容器，输入密码ctf，链接容器后输入ls，发现flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{06ae16da-1136-44c6-b5fa-22989e5e2fc9}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;六前端什么是前端&#34;&gt;六、前端？什么是前端
+&lt;/h2&gt;&lt;p&gt;打开容器，进入网页，查看页面源代码，发现flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{YOU_R34lly_kNOw_1ron77TtTTT7t7tT7TTTTtTt7TT7}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;七网络安全实验室欢迎你&#34;&gt;七、网络安全实验室欢迎你
+&lt;/h2&gt;&lt;p&gt;打开容器，进入网页&lt;a class=&#34;link&#34; href=&#34;http://contest.ctf.nefu.edu.cn:33552/?%E7%BD%91[%E5%AE%89][%E5%AE%9E][%E9%AA%8C][%E5%AE%A4][%E6%AC%A2][%E8%BF%8E][%E4%BD%A0]=/flag&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://contest.ctf.nefu.edu.cn:33552/?%E7%BD%91[%E5%AE%89][%E5%AE%9E][%E9%AA%8C][%E5%AE%A4][%E6%AC%A2][%E8%BF%8E][%E4%BD%A0]=/flag&lt;/a&gt;,
+发现flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{hello_b62bc53a8725}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;八rsa-00&#34;&gt;八、RSA-00
+&lt;/h2&gt;&lt;p&gt;flag就在题目中&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{学好RSA，走遍天下都不怕}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;九rsa入门-01&#34;&gt;九、RSA入门-01
+&lt;/h2&gt;&lt;p&gt;flag就在题目中，为nsilab{R!S!A!来喽!}&lt;/p&gt;
+&lt;h2 id=&#34;十new-hacker-0&#34;&gt;十、New Hacker-0
+&lt;/h2&gt;&lt;p&gt;打开容器，进入网页，先输入ls，在出现的三个文件中未发现flag，输入&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ls /&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;查找根目录，发现flag，输入cat /flag，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{c80a3061-1976-4fc0-af01-95d7e882662a}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;十一招新文档&#34;&gt;十一、招新文档
+&lt;/h2&gt;&lt;p&gt;打开容器，进入网页，通过开发者工具切换到网络面板，刷新网页，寻找http响应头，发现源站通过 Cloudflare 平台部署，使用nginx服务器软件，从而得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{cloudflare_nginx}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;十二哈基米&#34;&gt;十二、哈基米
+&lt;/h2&gt;&lt;p&gt;刚开始毫无头绪，只能将其复制到浏览器中搜索，找到知乎一个人写的哈基码网站为&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/1946752526117475410&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://zhuanlan.zhihu.com/p/1946752526117475410&lt;/a&gt;,利用其工具将其解码，发现其为base64编码，将其解码后得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{h4ch1mi_HacH1mI_h4C1M1n4m3ruD0}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;十三爱-国&#34;&gt;十三、爱 国
+&lt;/h2&gt;&lt;p&gt;与十二类似，上网找社会主义核心价值观编码器，对其解码得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{中华人民万岁}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;十四罗马的一个皇帝&#34;&gt;十四、罗马的一个皇帝
+&lt;/h2&gt;&lt;p&gt;根据题目想到是凯撒密码，一个一个试，发现偏移16位，找到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{hello caesar}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;十五-基&#34;&gt;十五 基
+&lt;/h2&gt;&lt;p&gt;一道base64编码题，对其进行解码，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{this_your_gift_cyberchef.org}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;十六md5&#34;&gt;十六、md5
+&lt;/h2&gt;&lt;p&gt;这个不太会，问了豆包，让用md5哈希碰撞，使用linux发送
+&lt;code&gt;curl &amp;quot;http://contest.ctf.nefu.edu.cn:33628/?a[]=1&amp;amp;b[]=2&amp;quot; -d &amp;quot;c[]=5&amp;amp;d[]=6&amp;quot;  &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{mds_MDs_mdS_md5_mdS_mDsS55SSsSSS5SS5sss5SsSss5}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;十七哈基米_0&#34;&gt;十七、哈基米_0
+&lt;/h2&gt;&lt;p&gt;进入网页，打开开发者工具，打开control.js，发现是异或解密，将其解密后得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NSILAB{Y0u_RevErSed_The_f1rSt_H@}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;十八-点击即送&#34;&gt;十八 点击即送
+&lt;/h2&gt;&lt;p&gt;下载附件，我当时没下逆向工具，用录屏得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{flag_looks_like_this}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;十九fence&#34;&gt;十九、Fence
+&lt;/h2&gt;&lt;p&gt;到浏览器搜索，发现是栅栏密码，假设栏数位2，将其解密后得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{flag_looks_like_this}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二十fence2&#34;&gt;二十、Fence2
+&lt;/h2&gt;&lt;p&gt;直接枚举，暴力破解，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{D0_u_5ee_1ast_f1ag?}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二十一rsa-01&#34;&gt;二十一、RSA-01
+&lt;/h2&gt;&lt;p&gt;以下为豆包结论：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解题的核心步骤如下:&lt;br&gt;
+计算模数 n：n = p * q&lt;br&gt;
+计算欧拉函数 φ(n)：对于两个不同的素数 p 和 q，φ(n) = (p-1) * (q-1)&lt;br&gt;
+计算私钥 d：d 是 e 的模逆元，即 d = e⁻¹ mod φ(n)。这意味着 (e * d) % φ(n) = 1。&lt;br&gt;
+解密密文 c：明文 m = cᵈ mod n&lt;br&gt;
+将明文转换为字符串：将得到的整数 m 转换回字节，即可得到 flag&lt;br&gt;
+我得到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag = nsilab{Hello_RSA}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;代码为
+`from Crypto.Util.number import long_to_bytes&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;p = 173959611786153317706301267932417363937
+q = 247839891815273718588039400253940099247
+c = 9238164112105252409917439007600050016039975407551321496401161303034206220059
+e = 65537
+
+n = p * q
+
+phi_n = (p - 1) * (q - 1)
+
+d = pow(e, -1, phi_n)
+
+m = pow(c, d, n)
+
+flag = long_to_bytes(m)
+
+print(f&amp;quot;n = {n}&amp;quot;)
+print(f&amp;quot;phi(n) = {phi_n}&amp;quot;)
+print(f&amp;quot;d = {d}&amp;quot;)
+print(f&amp;quot;m (as integer) = {m}&amp;quot;)
+print(f&amp;quot;flag = {flag.decode(&#39;utf-8&#39;)}&amp;quot;)`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;二十二ez_param&#34;&gt;二十二、ez_param
+&lt;/h2&gt;&lt;p&gt;通过linux发送&lt;code&gt;curl -X POST -d &amp;quot;b=CTF&amp;quot; -b &amp;quot;c=2023&amp;quot; &amp;quot;contest.ctf.nefu.edu.cn:33647?a=NEFU&amp;quot;&lt;/code&gt;，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{51d436e3-115d-4850-b3ae-6562a46373ab}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二十三点击即送的时代一去不复返了&#34;&gt;二十三、点击即送的时代一去不复返了！
+&lt;/h2&gt;&lt;p&gt;用IDA Pro反编译一下就出来了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{this_Is_a_EaSyRe}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二十四new-hacker-1&#34;&gt;二十四、New Hacker-1
+&lt;/h2&gt;&lt;p&gt;尝试十的过程失败后，尝试运行&lt;strong&gt;init.sh&lt;/strong&gt;，怀疑flag在环境变量中，输入env，发现flag在环境变量中&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{51d436e3-115d-4850-b3ae-6562a46373ab}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二十五ezpyjail_0&#34;&gt;二十五、ezPyJail_0
+&lt;/h2&gt;&lt;p&gt;用nc连接，发现让查找环境变量，输入&lt;code&gt;__import__(&#39;os&#39;).environ&lt;/code&gt;，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{65abf532-7eaa-4b68-a5e5-15e97e53a3ed}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二十六ezpyjail_1&#34;&gt;二十六、ezPyJail_1
+&lt;/h2&gt;&lt;p&gt;用nc连接，发现让查找环境变量，但是有输入限制，输入&lt;code&gt;eval(input())&lt;/code&gt;，跳出限制，再输入&lt;code&gt;__import__(&#39;os&#39;).environ&lt;/code&gt;，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{e195e279-e3c3-455d-871f-3e08f077ee23}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二十七ezpyjail_2&#34;&gt;二十七、ezPyJail_2
+&lt;/h2&gt;&lt;p&gt;用nc连接，直接输入flag，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{7088410e-3ed1-4cc4-840c-d970e14d38c3}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二十八ezpyjail_3&#34;&gt;二十八、ezPyJail_3
+&lt;/h2&gt;&lt;p&gt;相比于前几题限制增多，上网查找到一个writeup&lt;a class=&#34;link&#34; href=&#34;https://www.woodwhale.cn/hnctfj-ail-all-in-one/#week2-calc-jail-beginner-level4-1-jail&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.woodwhale.cn/hnctfj-ail-all-in-one/#week2-calc-jail-beginner-level4-1-jail&lt;/a&gt;,发现包括前几题在内的解决办法，该题输入&lt;code&gt;open((bytes([102])+bytes([108])+bytes([97])+bytes([103])).decode()).read()&lt;/code&gt;，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{092c7236-b626-4f52-927e-67ddcb1f14da}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;二十九mediumpyjail_b&#34;&gt;二十九、mediumPyJail_B
+&lt;/h2&gt;&lt;p&gt;与二十八一样，方法都在writeup中，但是多了一个找到key的过程，输入&lt;code&gt; f&amp;quot;{xorer.key}&amp;quot;&lt;/code&gt;,得到key为&lt;strong&gt;23&lt;/strong&gt;，flag为[121, 100, 126, 123, 118, 117, 108, 35, 46, 39, 35, 46, 36, 37, 113, 58, 113, 46, 37, 33, 58, 35, 34, 38, 37, 58, 117, 37, 38, 37, 58, 47, 116, 117, 46, 37, 37, 37, 116, 39, 116, 32, 34, 106]，将其转化为十六进制，再进行xor解密，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{4904932f-f926-4512-b212-8cb9222c0c75}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三十0-ascanete_is_so_cute&#34;&gt;三十、0-Ascanete_is_so_cute
+&lt;/h2&gt;&lt;p&gt;仿照培训找到的flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{ae9d8955-1e13-40b2-99dc-5da4f10699f3}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三十一0-real_signup&#34;&gt;三十一、0-real_signup
+&lt;/h2&gt;&lt;p&gt;nc连上就出了flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{fdc1570e-e5f1-48a2-92e4-d1c0e8dc5176}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三十二0-signup&#34;&gt;三十二、0-signup
+&lt;/h2&gt;&lt;p&gt;与三十一样的方法，nc连上，&lt;code&gt;ls&lt;/code&gt;一下，发现有flag文件，输入&lt;code&gt;cat flag&lt;/code&gt;，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{fc20d550-6582-47f8-b0c9-8805c8ef8578}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三十三1-ez_pwn&#34;&gt;三十三、1-ez_pwn
+&lt;/h2&gt;&lt;p&gt;同三十&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{3b454fdb-3de2-4730-881c-5b51e54350ad}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三十四0-ez_oi迫真&#34;&gt;三十四、0-ez_oi(迫真)
+&lt;/h2&gt;&lt;p&gt;通过pwntools运行代码，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{00d79482-2c41-4ba1-9ab4-aac99137b8e4}&lt;br&gt;
+代码为
+`#!/usr/bin/env python3
+from pwn import *
+import math&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;def prime_factorization(x):
+factors = []
+while x % 2 == 0:
+factors.append(2)
+x = x // 2
+i = 3
+while i * i &amp;lt;= x:
+while x % i == 0:
+factors.append(i)
+x = x // i
+i += 2
+if x &amp;gt; 1:
+factors.append(x)
+return factors&lt;/p&gt;
+&lt;p&gt;io = remote(&amp;lsquo;contest.ctf.nefu.edu.cn&amp;rsquo;, 33772)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;n&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;n = int(io.recvline().decode().strip())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;字
+numbers_line = io.recvline().decode().strip()
+numbers = list(map(int, numbers_line.split()))&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for num in numbers:
+    factors = prime_factorization(num)
+
+    result = &#39;*&#39;.join(map(str, factors))
+    print(f&amp;quot;Sending: {result}&amp;quot;) 
+    
+
+    io.sendline(result.encode()) 
+
+print(&amp;quot;\n--- Receiving final output from server ---&amp;quot;)
+while True:
+    try:
+
+        response = io.recvline(timeout=1).decode().strip()
+        if response:
+            print(response)
+        else:
+            break 
+    except EOFError:
+        break
+
+io.close()`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;三十五1-what_is_32&#34;&gt;三十五、1-what_is_32
+&lt;/h2&gt;&lt;p&gt;与33题相同，但原以为32位系统a应该输入20+4，结果发现a应该输入20+8，后面同三十题，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{19cca7a1-f6ec-4195-80dc-63a3eab4e316}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三十六1-神秘数字&#34;&gt;三十六、1-神秘数字
+&lt;/h2&gt;&lt;p&gt;这道题运用了补码的知识，-114514 的 32 位补码表示是 0xFFFFD6EE，这个二进制序列如果被解释为一个无符号整数，它的值就是 4294852782，所以输入4294852782即可得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{788109c7-ed1e-4fa4-9a0e-fb0ac66b99c5}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三十七不停的鹿&#34;&gt;三十七、不停的鹿
+&lt;/h2&gt;&lt;p&gt;新生培训&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{IULUlU_IulU1uIuuUuuUUuUuuuUuuuUUuuUuUUuuuuUUUUUuuuuUuuUUuuuuuUUUuuUuUuuUUU}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三十八rsa入门-02&#34;&gt;三十八、RSA入门-02
+&lt;/h2&gt;&lt;p&gt;同上&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{8811544}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;三十九rsa入门-03&#34;&gt;三十九、RSA入门-03
+&lt;/h2&gt;&lt;p&gt;同上&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{3604436468783450892188797727424315019700464485426289400510317953710604890993}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;代码为`
+p = 250267979330594551356981870969598325261
+q = 333057179167141094941957875863444588587
+e = 65537&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;N = p * q
+
+phi_N = (p - 1) * (q - 1)
+
+d = pow(e, -1, phi_N)
+
+print(f&amp;quot;验证: (e * d) mod φ(N) = {(e * d) % phi_N}&amp;quot;)
+
+print(f&amp;quot;私钥 d 是: {d}&amp;quot;)
+print(f&amp;quot;nsilab{{{d}}}&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;`&lt;/p&gt;
+&lt;h2 id=&#34;四十ez_lsb&#34;&gt;四十、ez_LSB
+&lt;/h2&gt;&lt;p&gt;同上&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{W0w_Y0u_know_LSB!}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;四十一rsa-02-factorme&#34;&gt;四十一、RSA-02-FactorMe
+&lt;/h2&gt;&lt;p&gt;对n分解质因数，得到p和q，再计算phi_N=(p-1)(q-1)，最后计算d=e^(-1) mod phi_N，即可得到私钥d，最后得到m，再将m转为字符串即可得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{yafu!}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;四十二osint一条河&#34;&gt;四十二、【OSINT】一条河
+&lt;/h2&gt;&lt;p&gt;通过百度识图定位是太原，再用百度地图找到具体位置&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nsilab{汾河_山西体育中心体育场}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;四十三倒霉的agiao-1&#34;&gt;四十三、倒霉的Agiao-1
+&lt;/h2&gt;&lt;p&gt;用Notepad打开附件，搜索user_name,找到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;flag{JusticeEnforcement-DeepMountains-nullSecurity-zhaowendao}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;请先看我-wp模板&#34;&gt;#请先看我 WP模板
+&lt;/h2&gt;&lt;p&gt;将flag拼接起来，得到flag&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NSILAB{Th1s_1s_@_Ex@mp1e_f1@g}&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
         <title>Newnewnew</title>
         <link>https://fangyilin66.github.io/%E8%8C%83%E4%BE%8B/newnewnew/</link>
         <pubDate>Sun, 05 Oct 2025 15:05:05 +0800</pubDate>
