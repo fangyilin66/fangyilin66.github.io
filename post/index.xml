@@ -13,8 +13,7 @@
         <pubDate>Thu, 23 Oct 2025 19:44:07 +0800</pubDate>
         
         <guid>https://fangyilin66.github.io/p/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1ctf%E6%96%B0%E6%89%8B%E8%B5%9B/</guid>
-        <description>&lt;h1 id=&#34;writeup&#34;&gt;Writeup
-&lt;/h1&gt;&lt;h2 id=&#34;一内网网盘&#34;&gt;一、内网网盘
+        <description>&lt;h2 id=&#34;一内网网盘&#34;&gt;一、内网网盘
 &lt;/h2&gt;&lt;p&gt;进入&lt;a class=&#34;link&#34; href=&#34;https://ctf.nefu.edu.cn/netdisk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://ctf.nefu.edu.cn/netdisk&lt;/a&gt;,flag在文件&lt;strong&gt;here_is_what_you_want.txt&lt;/strong&gt;中。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -136,9 +135,10 @@
 &lt;p&gt;flag = nsilab{Hello_RSA}&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;代码为
-`from Crypto.Util.number import long_to_bytes&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;p = 173959611786153317706301267932417363937
+&lt;p&gt;代码为&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from Crypto.Util.number import long_to_bytes
+
+p = 173959611786153317706301267932417363937
 q = 247839891815273718588039400253940099247
 c = 9238164112105252409917439007600050016039975407551321496401161303034206220059
 e = 65537
@@ -157,7 +157,7 @@ print(f&amp;quot;n = {n}&amp;quot;)
 print(f&amp;quot;phi(n) = {phi_n}&amp;quot;)
 print(f&amp;quot;d = {d}&amp;quot;)
 print(f&amp;quot;m (as integer) = {m}&amp;quot;)
-print(f&amp;quot;flag = {flag.decode(&#39;utf-8&#39;)}&amp;quot;)`
+print(f&amp;quot;flag = {flag.decode(&#39;utf-8&#39;)}&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;二十二ez_param&#34;&gt;二十二、ez_param
 &lt;/h2&gt;&lt;p&gt;通过linux发送&lt;code&gt;curl -X POST -d &amp;quot;b=CTF&amp;quot; -b &amp;quot;c=2023&amp;quot; &amp;quot;contest.ctf.nefu.edu.cn:33647?a=NEFU&amp;quot;&lt;/code&gt;，得到flag&lt;/p&gt;
@@ -301,12 +301,12 @@ print(f&amp;quot;flag = {flag.decode(&#39;utf-8&#39;)}&amp;quot;)`
 &lt;blockquote&gt;
 &lt;p&gt;nsilab{3604436468783450892188797727424315019700464485426289400510317953710604890993}&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;代码为
-`
-p = 250267979330594551356981870969598325261
+&lt;p&gt;代码为&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;p = 250267979330594551356981870969598325261
 q = 333057179167141094941957875863444588587
-e = 65537&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;N = p * q
+e = 65537
+
+N = p * q
 
 phi_N = (p - 1) * (q - 1)
 
@@ -317,7 +317,6 @@ print(f&amp;quot;验证: (e * d) mod φ(N) = {(e * d) % phi_N}&amp;quot;)
 print(f&amp;quot;私钥 d 是: {d}&amp;quot;)
 print(f&amp;quot;nsilab{{{d}}}&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;`&lt;/p&gt;
 &lt;h2 id=&#34;四十ez_lsb&#34;&gt;四十、ez_LSB
 &lt;/h2&gt;&lt;p&gt;同上&lt;/p&gt;
 &lt;blockquote&gt;

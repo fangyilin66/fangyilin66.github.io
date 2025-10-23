@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Writeup 一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\nflag{This_our_netdisk!}\n">
 <title>我的第一次CTF新手赛</title>
 
 <link rel='canonical' href='https://fangyilin66.github.io/p/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1ctf%E6%96%B0%E6%89%8B%E8%B5%9B/'>
 
 <link rel="stylesheet" href="/scss/style.min.847a3791adb9757f6ddf918c3ffed8aa01452a856ed5b670f9e8aae9567d425e.css"><meta property='og:title' content="我的第一次CTF新手赛">
-<meta property='og:description' content="Writeup 一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\n">
+<meta property='og:description' content="一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\nflag{This_our_netdisk!}\n">
 <meta property='og:url' content='https://fangyilin66.github.io/p/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1ctf%E6%96%B0%E6%89%8B%E8%B5%9B/'>
 <meta property='og:site_name' content='fangyilin'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-10-23T19:44:07&#43;08:00'/><meta property='article:modified_time' content='2025-10-23T19:44:07&#43;08:00'/>
 <meta name="twitter:title" content="我的第一次CTF新手赛">
-<meta name="twitter:description" content="Writeup 一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\n">
+<meta name="twitter:description" content="一、内网网盘 进入https://ctf.nefu.edu.cn/netdisk,flag在文件here_is_what_you_want.txt中。\nflag{This_our_netdisk!}\n">
     <link rel="shortcut icon" href="/GgSzznWbTdZXy0e.ico" />
 <div class="loading">
     <div class="sharingon">
@@ -548,8 +548,7 @@
     <section class="article-content">
     
     
-    <h1 id="writeup">Writeup
-</h1><h2 id="一内网网盘">一、内网网盘
+    <h2 id="一内网网盘">一、内网网盘
 </h2><p>进入<a class="link" href="https://ctf.nefu.edu.cn/netdisk"  target="_blank" rel="noopener"
     >https://ctf.nefu.edu.cn/netdisk</a>,flag在文件<strong>here_is_what_you_want.txt</strong>中。</p>
 <blockquote>
@@ -671,9 +670,10 @@
 <p>flag = nsilab{Hello_RSA}</p>
 </blockquote>
 </blockquote>
-<p>代码为
-`from Crypto.Util.number import long_to_bytes</p>
-<pre><code>p = 173959611786153317706301267932417363937
+<p>代码为</p>
+<pre><code>from Crypto.Util.number import long_to_bytes
+
+p = 173959611786153317706301267932417363937
 q = 247839891815273718588039400253940099247
 c = 9238164112105252409917439007600050016039975407551321496401161303034206220059
 e = 65537
@@ -692,7 +692,7 @@ print(f&quot;n = {n}&quot;)
 print(f&quot;phi(n) = {phi_n}&quot;)
 print(f&quot;d = {d}&quot;)
 print(f&quot;m (as integer) = {m}&quot;)
-print(f&quot;flag = {flag.decode('utf-8')}&quot;)`
+print(f&quot;flag = {flag.decode('utf-8')}&quot;)
 </code></pre>
 <h2 id="二十二ez_param">二十二、ez_param
 </h2><p>通过linux发送<code>curl -X POST -d &quot;b=CTF&quot; -b &quot;c=2023&quot; &quot;contest.ctf.nefu.edu.cn:33647?a=NEFU&quot;</code>，得到flag</p>
@@ -836,12 +836,12 @@ print(f&quot;flag = {flag.decode('utf-8')}&quot;)`
 <blockquote>
 <p>nsilab{3604436468783450892188797727424315019700464485426289400510317953710604890993}</p>
 </blockquote>
-<p>代码为
-`
-p = 250267979330594551356981870969598325261
+<p>代码为</p>
+<pre><code>p = 250267979330594551356981870969598325261
 q = 333057179167141094941957875863444588587
-e = 65537</p>
-<pre><code>N = p * q
+e = 65537
+
+N = p * q
 
 phi_N = (p - 1) * (q - 1)
 
@@ -852,7 +852,6 @@ print(f&quot;验证: (e * d) mod φ(N) = {(e * d) % phi_N}&quot;)
 print(f&quot;私钥 d 是: {d}&quot;)
 print(f&quot;nsilab{{{d}}}&quot;)
 </code></pre>
-<p>`</p>
 <h2 id="四十ez_lsb">四十、ez_LSB
 </h2><p>同上</p>
 <blockquote>
